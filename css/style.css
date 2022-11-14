@@ -1,0 +1,152 @@
+html {
+    height: 100%;
+    border: 6px solid #fff;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle, rgb(5, 1, 80) 0%, rgba(9,9,121,1) 50%, rgb(1, 132, 158) 100%);
+    background-size: 120%;
+    background-position: 50%;
+    height: 100%;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 6px solid rgba(255, 255, 255, .3);
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 1140px) {
+    h1 {
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+}
+
+
+@keyframes rotate-bg {
+    from {
+        background-position: 0% center;
+    }
+    
+    to {
+        background-position: -200% center;
+    }
+}
+@keyframes bounce {
+    0% {
+        
+    }
+    100% {
+        top: -15px
+    }
+}
+@keyframes bg-animation {
+    0% {
+        visibility: visible;
+
+        opacity: 0.2;
+        transform: scale(0.2) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(290deg);
+    }
+    100% {
+        opacity: 0.2;
+        transform: scale(0.2) rotate(0deg);
+    }
+}
+
+.fancy-text {
+    background: linear-gradient(to right, #194fff, #e942f5, #9e42f5, #194fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: rotate-bg 3s linear infinite;
+}
+
+h1 div span {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    animation: bounce .8s ease-in-out infinite alternate;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: .075s;
+}
+h1 span:nth-child(3) {
+    animation-delay: .125s;
+}
+h1 span:nth-child(4) {
+    animation-delay: .2s;
+}
+h1 span:nth-child(5) {
+    animation-delay: .275s;
+}
+h1 span:nth-child(6) {
+    animation-delay: .35s;
+}
+h1 span:nth-child(7) {
+    animation-delay: .425s;
+}
+h1 span:nth-child(8) {
+    animation-delay: .5s;
+}
+h1 span:nth-child(9) {
+    animation-delay: .575s;
+}
+
+.cuadrados div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid #fff;
+    visibility: hidden;
+    animation: bg-animation 3s ease-in-out infinite;
+}
+
+.cuadrados div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+}
+.cuadrados div:nth-child(2) {
+    top: 35%;
+    left: 12%;
+    animation-delay: 1s;
+}
+.cuadrados div:nth-child(3) {
+    top: 80%;
+    left: 63%;
+    animation-delay: 2s;
+}
+.cuadrados div:nth-child(4) {
+    top: 65%;
+    left: 26%;
+    animation-delay: 3s;
+}
+.cuadrados div:nth-child(5) {
+    top: 20%;
+    left: 78%;
+    animation-delay: 4s;
+}
