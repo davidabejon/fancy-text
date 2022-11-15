@@ -1,3 +1,3 @@
 # fancy-text
-Just some fancy text effects and background
+Just some fancy text effects and background  
 See on codepen -> https://codepen.io/davidabejon/pen/jOKLZgz
