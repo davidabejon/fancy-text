@@ -63,7 +63,7 @@ h1 {
         visibility: visible;
 
         opacity: 0.2;
-        transform: scale(0.2) rotate(0deg);
+        transform: scale(0) rotate(0deg);
     }
     50% {
         opacity: 1;
@@ -71,7 +71,7 @@ h1 {
     }
     100% {
         opacity: 0.2;
-        transform: scale(0.2) rotate(0deg);
+        transform: scale(0) rotate(0deg);
     }
 }
 
